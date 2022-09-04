@@ -35,16 +35,16 @@ export default defineNuxtConfig({
                 },
                 endpoints: {
                     csrf: {
-                        url: 'http://api.happili.test/sanctum/csrf-cookie'
+                        url: `${process.env.NUXT_PUBLIC_APP_URL}/sanctum/csrf-cookie`
                     },
                     login: {
-                        url: 'http://api.happili.test/login'
+                        url: `${process.env.NUXT_PUBLIC_APP_URL}/login`
                     },
                     logout: {
-                        url: 'http://api.happili.test/logout'
+                        url: `${process.env.NUXT_PUBLIC_APP_URL}/logout`
                     },
                     user: {
-                        url: 'http://api.happili.test/api/auth/me'
+                        url: `${process.env.NUXT_PUBLIC_APP_URL}/api/auth/me`
                     }
                 },
                 user: {
