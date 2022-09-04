@@ -35,16 +35,16 @@ export default defineNuxtConfig({
                 },
                 endpoints: {
                     csrf: {
-                        url: 'http://backend.laravel-sanctum.test/sanctum/csrf-cookie'
+                        url: 'http://api.happili.test/sanctum/csrf-cookie'
                     },
                     login: {
-                        url: 'http://backend.laravel-sanctum.test/login'
+                        url: 'http://api.happili.test/login'
                     },
                     logout: {
-                        url: 'http://backend.laravel-sanctum.test/logout'
+                        url: 'http://api.happili.test/logout'
                     },
                     user: {
-                        url: 'http://backend.laravel-sanctum.test/api/auth/me'
+                        url: 'http://api.happili.test/api/auth/me'
                     }
                 },
                 user: {
