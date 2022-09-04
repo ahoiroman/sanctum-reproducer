@@ -1,5 +1,6 @@
 <template>
     <div>
+        <span>Logged In? {{$auth.loggedIn}}</span>
         <span>User: {{$auth.user}}</span>
         <form @submit.prevent="login">
             Email:

@@ -34,6 +34,9 @@ export default defineNuxtConfig({
                     name: 'XSRF-TOKEN',
                 },
                 endpoints: {
+                    headers: {
+                        Accept: 'application/json',
+                    },
                     csrf: {
                         url: `${process.env.NUXT_PUBLIC_APP_URL}/sanctum/csrf-cookie`
                     },
